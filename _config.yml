@@ -1,1 +1,69 @@
-theme: jekyll-theme-architect
+# Site settings
+title: Stephan Johansen
+email: stephan@nonsultant.com
+url: https://skjohansen.com
+description: "I have a key interest in the cross section between humans and technology. How we interact with technology, how we teach technology and how technology can help manage companies. I believe that knowledge obtained in a fun and diverse environment, is the key to a successful technology integration."
+keywords: "Teaching, Agile Practices, Recruitment, Lego® Serious Play®, UX, Data Visualization, Cyber security, Software development, Cloud technologies"
+skills: "Entrepreneur - Teacher - Software Engineer"
+meta_author: Stephan Johansen
+
+# Google webmaster tools
+google_verify:
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+contact: static
+
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+disqus_shortname: myshortname
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 18bc9c #80B3FF
+  primary-rgb: "24,288,156" #"128,179,255"
+  secondary: 2c3e50 #FD6E8A
+  secondary-dark: 233140 #A2122F
+
+# Footer settings
+footer:
+  copyright: Stephan Johansen
+  location: Company
+  social: Around the Web
+  credits: Credits
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/skjohansen
+  - title: linkedin
+    url: https://www.linkedin.com/in/skjohansen/
+  - title: github
+    url: http://github.com/skjohansen
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: Nonsultant AB
+  - line: Gråbrödragatan 11
+  - line: 532 31, Skara
+  - line: Sweden
+
+# Credits content
+credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+#for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: ""
