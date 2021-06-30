@@ -1,0 +1,10 @@
+---
+layout: default
+modal-id: 2
+date: 2014-07-17
+img: devsecops.jpg
+alt: image-alt
+title: DevSecOps
+category: Security
+---
+DevSecOps is the cross section between technology, humans and security,
