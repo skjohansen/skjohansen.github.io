@@ -4,15 +4,15 @@ title: Tech radar
 permalink: /skjohansen-techradar.csv
 ---
 name,ring,quadrant,isNew,description  
-{%for language in site.data.technologies.languages -%}
+{%for language in site.data.technologies.languages -%}{% if language.ring -%}
 "{{language.technology}}","{{language.ring}}","language and frameworks",{{language.isNew}},"{{language.description}}"
-{%endfor-%}
-{%for technology in site.data.technologies.techniques -%}
+{%endif-%}{%endfor-%}
+{%for technology in site.data.technologies.techniques -%}{% if technology.ring -%}
 "{{technology.technology}}","{{technology.ring}}","techniques",{{technology.isNew}},"{{technology.description}}"
-{%endfor-%}
-{%for tool in site.data.technologies.tools -%}
+{%endif-%}{%endfor-%}
+{%for tool in site.data.technologies.tools -%}{% if tool.ring -%}
 "{{tool.technology}}","{{tool.ring}}","tools",{{tool.isNew}},"{{tool.description}}"
-{%endfor-%}
-{%for platform in site.data.technologies.platforms -%}
+{%endif-%}{%endfor-%}
+{%for platform in site.data.technologies.platforms -%}{% if platform.ring -%}
 "{{platform.technology}}","{{platform.ring}}","platforms",{{platform.isNew}},"{{platform.description}}"
-{%endfor-%}
+{%endif-%}{%endfor-%}
