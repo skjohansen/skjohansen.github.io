@@ -2,48 +2,65 @@ techniques:
   - technology: "Ethical OS"
     ring: trail 
     isNew: true
+    passions: [ Ethics ]
   - technology: "BDD"
     description: "Behavior driven development"  
     ring: assert
     isNew: false
+    passions: [ Documentation, Test automatization ]
+  - technology: "Threat Modelling"
+    description: "Build a model of the threads towards your company/systems"  
+    ring: assert
+    isNew: false
+    passions: [ Documentation, Security ]
 tools:
   - technology: "Playwright"
     ring: trail 
     isNew: true
+    passions: [ Documentation, Test automatization ]
   - technology: "GitHub actions"
     ring: adopt 
     isNew: false
+    passions: [ DevOps ]
   - technology: "Zally"
     description: "https://github.com/zalando/zally"
+    passions: [ Documentation ]
   - technology: Docker
     ring: trail 
     description: "Containerized"  
     isNew: false
+    passions: [ DevOps ]
   - technology: OpenAPI
     ring: trail 
     description: "API documentation"  
     isNew: false
+    passions: [ Documentation ]
   - technology: Kuberneets
     ring: trail 
     isNew: false
+    passions: [ DevOps ]
 platforms:
   - technology: "Pulumi"
     ring: assess
     isNew: false
     description: "IaC"
+    passions: [ DevOps ]
 languages:
   - technology: ".NET 5"
     type: tool
     ring: adopt 
     isNew: false
     description: Latest version of .NET
+    passions: [ Software development ]
   - technology: ".NET 6"
     type: tool
     ring: trail 
     isNew: true
     description: Next version of .NET
+    passions: [ Software development ]
   - technology: "Blazor"
     type: tool
     ring: trail 
     isNew: false
     description: Next gen
+    passions: [ Software development ]

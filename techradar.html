@@ -4,15 +4,15 @@ title: Tech radar
 permalink: /skjohansen-techradar.csv
 ---
 name,ring,quadrant,isNew,description  
-{%for tech in site.data.technologies.languages -%}
-"{{tech.technology}}","{{tech.ring}}","language and frameworks",{{tech.isNew}},"{{tech.description}}"
-{%- endfor%}
-{%for tech in site.data.technologies.techniques -%}
-"{{tech.technology}}","{{tech.ring}}","techniques",{{tech.isNew}},"{{tech.description}}"
-{%- endfor%}
-{%for tech in site.data.technologies.tools -%}
-"{{tech.technology}}","{{tech.ring}}","tools",{{tech.isNew}},"{{tech.description}}"
-{%- endfor%}
-{%for tech in site.data.technologies.platforms -%}
-"{{tech.technology}}","{{tech.ring}}","platforms",{{tech.isNew}},"{{tech.description}}"
-{%- endfor%}
+{%for language in site.data.technologies.languages -%}
+"{{language.technology}}","{{language.ring}}","language and frameworks",{{language.isNew}},"{{language.description}}"
+{%endfor-%}
+{%for technology in site.data.technologies.techniques -%}
+"{{technology.technology}}","{{technology.ring}}","techniques",{{technology.isNew}},"{{technology.description}}"
+{%endfor-%}
+{%for tool in site.data.technologies.tools -%}
+"{{tool.technology}}","{{tool.ring}}","tools",{{tool.isNew}},"{{tool.description}}"
+{%endfor-%}
+{%for platform in site.data.technologies.platforms -%}
+"{{platform.technology}}","{{platform.ring}}","platforms",{{platform.isNew}},"{{platform.description}}"
+{%endfor-%}
