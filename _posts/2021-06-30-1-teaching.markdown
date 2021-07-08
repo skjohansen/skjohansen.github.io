@@ -4,7 +4,7 @@ modal-id: 1
 date: 2014-07-18
 img: newskills.jpg
 alt: image-alt
-category: Teaching
+passion: Teaching
 title: Teaching
 ---
 I perform teaching in many areas of programing, my style is "flipped classroom" where I provide the students the needed knowledge in the start of the class, and the rest is hands-on training.

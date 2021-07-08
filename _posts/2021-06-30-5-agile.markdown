@@ -6,7 +6,11 @@ img: safe.png
 alt: image-alt
 category: Management
 title: Agile Practices
+passion: Agile
 ---
 1, 2, 3 agile
+Scrum
+Extreme programming
+Done right
 Scrum
 Extreme programming

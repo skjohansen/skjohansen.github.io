@@ -6,5 +6,6 @@ img: submarine.png
 alt: image-alt
 category: People
 title: Tech recruitment
+passion: Talents
 ---
 Helps you find the talent you need

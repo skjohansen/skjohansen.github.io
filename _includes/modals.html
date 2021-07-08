@@ -33,12 +33,47 @@
                                         <strong>{{ post.project-date }}</a></strong>
                                     </li>
                                 {% endif %}
-                                {% if post.category %}
-                                    <li>Service:
-                                        <strong>{{ post.category }}</strong>
-                                    </li>
-                                {% endif %}
                             </ul>
+                            {% capture passionFilter %}technology.passions contains '{{post.passion}}'{% endcapture %}
+                            {% assign techniques = site.data.technologies.techniques | where_exp:"technology",passionFilter  %}
+                            {% if techniques and techniques.size > 0 %}
+                            <ul class="list-inline item-details">
+                                <li>Techniques:</li>
+                                {%for technology in techniques -%}
+                                <li><strong>{{ technology.technology }}</strong></li>
+                                {%endfor-%}                                   
+                            </ul>
+                            {% endif %}
+                            {% assign languages = site.data.technologies.languages | where_exp:"technology",passionFilter  %}
+                            {% if languages and languages.size > 0 %}
+                            <ul class="list-inline item-details">
+                                <li>Language and frameworks:</li>
+                                {%for technology in languages -%}
+                                <li><strong>{{ technology.technology }}</strong></li>
+                                {%endfor-%}                                   
+                                
+                            </ul>
+                            {% endif %}
+                            {% assign tools = site.data.technologies.tools | where_exp:"technology",passionFilter  %}
+                            {% if tools and tools.size > 0 %}
+                            <ul class="list-inline item-details">
+                                <li>Tools:</li>
+                                {%for technology in tools -%}
+                                <li><strong>{{ technology.technology }}</strong></li>
+                                {%endfor-%}                                   
+                                
+                            </ul>
+                            {% endif %}
+                            {% assign platforms = site.data.technologies.platforms | where_exp:"technology",passionFilter  %}
+                            {% if platforms and platforms.size > 0 %}
+                            <ul class="list-inline item-details">
+                                <li>Platforms:</li>
+                                {%for technology in platforms -%}
+                                <li><strong>{{ technology.technology }}</strong></li>
+                                {%endfor-%}                                   
+                                
+                            </ul>
+                            {% endif %}
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>

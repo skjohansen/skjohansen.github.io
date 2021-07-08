@@ -6,5 +6,6 @@ img: game.png
 alt: image-alt
 title: .NET development
 category: Software Development
+passion: Software development
 ---
 .NET is the shit

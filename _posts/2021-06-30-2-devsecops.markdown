@@ -5,6 +5,6 @@ date: 2014-07-17
 img: devsecops.jpg
 alt: image-alt
 title: DevSecOps
-category: Security
+passion: DevOps
 ---
 DevSecOps is the cross section between technology, humans and security,

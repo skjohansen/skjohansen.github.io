@@ -13,6 +13,9 @@ techniques:
     ring: assert
     isNew: false
     passions: [ Documentation, Security ]
+  - technology: "Dev containers"
+  - technology: "LEGO SeriousPlay"
+    passions: [ Play ]
 tools:
   - technology: "Playwright"
     ring: trail 

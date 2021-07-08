@@ -5,6 +5,7 @@ date: 2014-07-16
 img: circus.png
 alt: image-alt
 category: Facilitation
-title: LEGO SeriousPlay
+title: Play
+passion: Play
 ---
-What is this
+We have stoped playing, but why?
