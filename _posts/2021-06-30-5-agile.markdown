@@ -2,7 +2,8 @@
 layout: default
 modal-id: 5
 date: 2014-07-14
-img: safe.png
+img: agile.png
+img-large: agile_clean.png
 alt: image-alt
 title: Agile Practices
 passion: Agile

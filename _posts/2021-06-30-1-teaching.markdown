@@ -2,16 +2,18 @@
 layout: default
 modal-id: 1
 date: 2014-07-18
-img: newskills.jpg
+img: teaching.png
+img-large: teaching_clean.png
 alt: image-alt
 passion: Teaching
 title: Teaching
 ---
 I perform teaching in many areas of programing, my style is "flipped classroom" where I provide the students the needed knowledge in the start of the class, and the rest is hands-on training.
+coaching
 
-I have though:
+I have taught:
 * Cybersecurity
-* Webdevelopment backend (.NET)
+* Web-development backend (.NET)
 * Data access using .NET
 * Produce and deliver software
 * Development of cloud based applications

@@ -48,22 +48,26 @@ platforms:
     isNew: false
     description: "IaC"
     passions: [ DevOps ]
+  - technology: "Lego Mindstorm"
+    passions: [ Teaching, Play ]
 languages:
   - technology: ".NET 5"
-    type: tool
     ring: adopt 
     isNew: false
     description: Latest version of .NET
     passions: [ Software development ]
   - technology: ".NET 6"
-    type: tool
     ring: trail 
     isNew: true
     description: Next version of .NET
     passions: [ Software development ]
   - technology: "Blazor"
-    type: tool
     ring: trail 
     isNew: false
     description: Next gen
+    passions: [ Software development ]
+  - technology: "Low code"
+    ring: trail 
+    isNew: false
+    description: Or no code, FX
     passions: [ Software development ]

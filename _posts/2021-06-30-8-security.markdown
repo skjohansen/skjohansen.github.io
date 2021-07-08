@@ -2,7 +2,8 @@
 layout: default
 modal-id: 8
 date: 2014-07-15
-img: submarine.png
+img: security.png
+img-large: security_clean.png
 alt: image-alt
 title: Security
 passion: Security
