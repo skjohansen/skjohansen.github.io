@@ -15,7 +15,9 @@ techniques:
     passions: [ Documentation, Security ]
   - technology: "Dev containers"
   - technology: "LEGO SeriousPlay"
-    passions: [ Play ]
+    passions: [ Play, Teaching ]
+  - technology: "Flipped classroom"
+    passions: [ Teaching ]
 tools:
   - technology: "Playwright"
     ring: trail 

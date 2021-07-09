@@ -8,4 +8,9 @@ alt: image-alt
 title: Software development
 passion: Software development
 ---
+Lifecycle
+Craftsmanship
+
 .NET is the shit
+Clouds
+Azure
