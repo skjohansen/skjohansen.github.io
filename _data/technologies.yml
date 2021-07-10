@@ -1,3 +1,6 @@
+# each area have a multiple "technology"
+# for a technology to show up in the tech radar is "ring" needed
+# for a technology to show up on a passion is one or more passion needed in "passions"
 techniques:
   - technology: "Ethical OS"
     ring: trail 
