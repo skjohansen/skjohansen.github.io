@@ -18,6 +18,10 @@ techniques:
     passions: [ Play, Teaching ]
   - technology: "Flipped classroom"
     passions: [ Teaching ]
+  - technology: "UML"
+    passions: [ Documentation ]
+  - technology: "C4 model"
+    passions: [ Documentation ]
 tools:
   - technology: "Playwright"
     ring: trail 
@@ -52,6 +56,11 @@ platforms:
     passions: [ DevOps ]
   - technology: "Lego Mindstorm"
     passions: [ Teaching, Play ]
+  - technology: "GDPR"
+    ring: assess
+    isNew: false
+    description: "GDPR from EU hit the software industry in so many other ways than just cookie content"
+    passions: [ Documentation, Security, Ethics, Test, DevOps ]
 languages:
   - technology: ".NET 5"
     ring: adopt 
