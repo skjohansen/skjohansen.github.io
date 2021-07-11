@@ -1,5 +1,5 @@
  <!-- Portfolio Modals -->
- {% for post in site.posts %}
+ {% for post in site.passions %}
     <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -19,7 +19,7 @@
                                 <p>{{ post.description }}</p>
                             {% endif %}
                             {% if post.content  %}
-                                <p>{{ post.content  }}</p>
+                                <p>{{ post.content | markdownify  }}</p>
                             {% endif %}
                             <ul class="list-inline item-details">
                                 {% if post.client %}

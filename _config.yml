@@ -67,3 +67,7 @@ defaults:
       type: "posts"
     values:
       permalink: ""
+
+collections:
+  passions:
+    sort_by: modal-id
