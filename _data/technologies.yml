@@ -25,6 +25,14 @@ techniques:
     passions: [ Documentation ]
   - technology: "C4 model"
     passions: [ Documentation ]
+  - technology: "Static App Security Test (SAST)"
+    passions: [ DevOps ]
+  - technology: "Software Composition Analysis (SCA)"
+    passions: [ DevOps ]
+  - technology: "Dynamic App Security Test (DAST)"
+    passions: [ DevOps ]
+  - technology: "Interactive App Security Test (IAST)"
+    passions: [ DevOps ]    
 tools:
   - technology: "Playwright"
     ring: trail 
@@ -85,3 +93,10 @@ languages:
     isNew: false
     description: Or no code, FX
     passions: [ Software development ]
+  - technology: "CodeQL"
+    ring: trail 
+    isNew: false
+    description: Search your code
+    passions: [ Software development, DevOps ]
+
+   
