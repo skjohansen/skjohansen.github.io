@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 1
-date: 2014-07-17
+date: 2014-07-01
 img: devops.png
 img-large: devsecops_clean.png
 alt: image-alt

@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 7
-date: 2014-07-15
+date: 2014-07-07
 img: testing.png
 img-large: testing_clean.png
 alt: image-alt

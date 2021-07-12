@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 1
-date: 2014-07-15
+date: 2014-07-01
 img: software.png
 img-large: software_clean.png
 alt: image-alt
