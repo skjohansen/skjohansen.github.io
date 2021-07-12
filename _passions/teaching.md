@@ -1,6 +1,6 @@
 ---
 layout: default
-modal-id: 1
+modal-id: 2
 date: 2014-07-18
 img: teaching.png
 img-large: teaching_clean.png

@@ -71,3 +71,5 @@ defaults:
 collections:
   passions:
     sort_by: modal-id
+  core_skills:
+    sort_by: modal-id
