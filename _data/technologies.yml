@@ -72,6 +72,11 @@ platforms:
     isNew: false
     description: "GDPR from EU hit the software industry in so many other ways than just cookie content"
     passions: [ Documentation, Security, Ethics, Test, DevOps ]
+  - technology: "ISO 27001"
+    ring: adopt
+    isNew: false
+    description: "ISO 27001 is a manage framework, which helps organization to make sure they are incorporating information security"
+    passions: [Security, Ethics, Documentation]
 languages:
   - technology: ".NET 5"
     ring: adopt 
