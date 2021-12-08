@@ -56,6 +56,10 @@ tools:
     isNew: false
     passions: [ Documentation ]
   - technology: Kuberneets
+    ring: adopt 
+    isNew: false
+    passions: [ DevOps ]
+  - technology: Argo CD
     ring: trail 
     isNew: false
     passions: [ DevOps ]

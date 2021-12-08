@@ -1,0 +1,31 @@
+---
+layout: base
+---
+<header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+            {% if page.title%}
+            <h2>{{page.title}}</h2>
+        {% else %}
+            <h2>Untitled post</h2>
+        {% endif %}
+        {{ page.date | date: "%b %d, %Y" }}
+
+        <hr class="star-light">
+        </div>
+      </div>
+    </div>
+</header>
+<section id="post">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                {{ content }}
+            </div>
+        </div>
+
+    </div>
+</section>
+
