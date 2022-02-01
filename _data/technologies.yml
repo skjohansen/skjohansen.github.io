@@ -67,6 +67,11 @@ tools:
     ring: trail 
     isNew: false
     passions: [ DevOps ]
+  - technology: PLG stack
+    ring: trail 
+    isNew: false
+    description: "Prometheus, Loki and Grafana"
+    passions: [ DevOps ]
 platforms:
   - technology: "Pulumi"
     ring: assess
