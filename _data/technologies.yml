@@ -32,7 +32,11 @@ techniques:
   - technology: "Dynamic App Security Test (DAST)"
     passions: [ DevOps ]
   - technology: "Interactive App Security Test (IAST)"
-    passions: [ DevOps ]    
+    passions: [ DevOps ]   
+  - technology: "GitOps"
+    ring: trail 
+    description: Keep you infrastructure declarative and within version control, with the ability to do Continuous Deployment of your infrastructure.
+    passions: [ DevOps ]  
 tools:
   - technology: "Playwright"
     ring: trail 
