@@ -1,0 +1,6 @@
+# This is not used, using standard from devcontainer.json
+# The thought was to look into id the newline 
+# Maybe the problem can be solved by git: git config --global core.autocrlf true
+
+# FROM mcr.microsoft.com/devcontainers/jekyll:0-bullseye
+
