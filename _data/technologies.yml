@@ -72,6 +72,11 @@ tools:
     isNew: false
     description: "Prometheus, Loki and Grafana"
     passions: [ DevOps ]
+  - technology: Cake
+    ring: trail 
+    isNew: false
+    description: "Build system for .NET"
+    passions: [ DevOps ]
 platforms:
   - technology: "Pulumi"
     ring: assess
@@ -91,15 +96,15 @@ platforms:
     description: "ISO 27001 is a manage framework, which helps organization to make sure they are incorporating information security"
     passions: [Security, Ethics, Documentation]
 languages:
-  - technology: ".NET 5"
-    ring: adopt 
-    isNew: false
-    description: Latest version of .NET
-    passions: [ Software development ]
   - technology: ".NET 6"
+    ring: adopt 
+    isNew: true
+    description: Previous version of .NET
+    passions: [ Software development ]
+  - technology: ".NET 7"
     ring: trail 
     isNew: true
-    description: Next version of .NET
+    description: Latest and current version of .NET
     passions: [ Software development ]
   - technology: "Blazor"
     ring: trail 
