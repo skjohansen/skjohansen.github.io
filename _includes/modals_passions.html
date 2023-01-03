@@ -74,18 +74,11 @@
                                 
                             </ul>
                             {% endif %}
-                            {% capture tagsFilter2 %}tag contains '{{post.passion}}'{% endcapture %}
-                            {% capture tagsFilter %}tag contains 'security'{% endcapture %}
-                            
-                            <ul>
-                            <li>{{post.passion}}</li>
-                            <li>{{passionFilter}}</li>
-                            <li>{{tagsFilter}}</li>
-                            </ul>
-                            {% assign blogs = site.posts | where_exp:"tag",tagsFilter %}
+                            {% capture tagsFilter %}blogitem.tags contains '{{post.passion}}'{% endcapture %}
+                            {% assign blogs = site.posts | where_exp:"blogitem",tagsFilter %}                           
                             {% if blogs and blogs.size > 0 %}
                             <ul class="list-inline item-details">
-                                <li>Blogs on :</li>
+                                <li>Blogs on {{post.passion}}:</li>
                                 {%for blogpost in blogs -%}
                                 <li><a href="{{ blogpost.url }}">{{ blogpost.title }}</a></li>
                                 {%endfor-%}                                   
