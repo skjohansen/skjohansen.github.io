@@ -74,6 +74,17 @@
                                 
                             </ul>
                             {% endif %}
+                            {% capture tagsFilter %}blogitem.tags contains '{{post.passion}}'{% endcapture %}
+                            {% assign blogs = site.posts | where_exp:"blogitem",tagsFilter %}                           
+                            {% if blogs and blogs.size > 0 %}
+                            <ul class="list-inline item-details">
+                                <li>Blogs on {{post.passion}}:</li>
+                                {%for blogpost in blogs -%}
+                                <li><a href="{{ blogpost.url }}">{{ blogpost.title }}</a></li>
+                                {%endfor-%}                                   
+                                
+                            </ul>
+                            {% endif %}
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
