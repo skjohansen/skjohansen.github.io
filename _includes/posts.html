@@ -12,7 +12,7 @@
                 <ul>
                     {% for post in site.posts %}
                     <li>
-                      <a href="{{ post.url }}">{{ post.title }}</a>
+                        {{ post.date | date: "%F" }} - <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.passions }})
                     </li>
                     {% endfor %}
                 </ul>
