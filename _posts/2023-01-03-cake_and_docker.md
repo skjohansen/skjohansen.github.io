@@ -4,7 +4,7 @@ gist-link: https://gist.github.com/skjohansen/01a4bc472eff47422e964919a3c3dbb2
 repo-link: https://github.com/skjohansen/example-cake_and_docker
 layout: post
 title: "Cake and Docker"
-tags: DevOps
+passions: DevOps
 ---
 
 ![Banner with Cake and Docker](/img/posts/cd-banner-20230104.png)

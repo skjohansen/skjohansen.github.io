@@ -74,8 +74,8 @@
                                 
                             </ul>
                             {% endif %}
-                            {% capture tagsFilter %}blogitem.tags contains '{{post.passion}}'{% endcapture %}
-                            {% assign blogs = site.posts | where_exp:"blogitem",tagsFilter %}                           
+                            {% capture passionFilter %}blogitem.passions contains '{{post.passion}}'{% endcapture %}
+                            {% assign blogs = site.posts | where_exp:"blogitem",passionFilter %}                           
                             {% if blogs and blogs.size > 0 %}
                             <ul class="list-inline item-details">
                                 <li>Blogs on {{post.passion}}:</li>
