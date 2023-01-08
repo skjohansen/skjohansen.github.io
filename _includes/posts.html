@@ -8,14 +8,16 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12">
-                <ul>
-                    {% for post in site.posts %}
-                    <li>
-                        {{ post.date | date: "%F" }} - <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.passions }})
-                    </li>
-                    {% endfor %}
-                </ul>
+            <div class="blogpost-list">
+                <div class="col-lg-12">
+                    <ul>
+                        {% for post in site.posts %}
+                        <li>
+                            {{ post.date | date: "%F" }} - <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.passions }}) : {{ post.summary }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
         </div>
 
