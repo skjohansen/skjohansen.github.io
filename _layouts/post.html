@@ -13,13 +13,22 @@ layout: base
         {{ page.date | date: "%F" }}
 
         <hr class="star-light">
+        {% if page.summary%}
+        {{page.summary}}
+        {% endif %}
         </div>
       </div>
     </div>
 </header>
 <section id="post">
     <div class="container">
-
+        {% if page.banner-image%}
+        <div class="row">
+            <div class="col-lg-12">
+                <img src="/img/posts/{{ page.banner-image }}" alt="Banner of {{page.title}}"/>
+            </div>
+        </div>
+        {% endif %}
         <div class="row">
             <div class="col-lg-12">
                 {{ content }}
