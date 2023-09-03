@@ -179,6 +179,7 @@ section {
 section h2 {
     margin: 0;
     font-size: 3em;
+    padding-top: 1em;
 }
 
 section.success {
@@ -485,7 +486,7 @@ footer .footer-below {
 }
 
 .postcontent img{
-    width: 100%;
+/*    width: 100%; */
 }
 
 .blogpost-list li{
