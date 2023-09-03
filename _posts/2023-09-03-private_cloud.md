@@ -2,7 +2,7 @@
 layout: post
 title: Private cloud - a computing weather-machine!
 passions: Cloud
-summary: Use a private cloud your computing weather, build an infrastructure which in which you can controll both the where and how
+summary: Supercharge your computing environment by harnessing the power of a private cloud. Create an infrastructure that puts you in the driver's seat, giving you control over the location and configuration, all while enjoying the perks of the public cloud. Get ready to take your productivity to new heights!
 banner-image: private_cloud-banner-20230903.png
 ---
 
@@ -36,7 +36,7 @@ To fully harness the benefits of these reasons, certain preconditions must be me
 ## Unraveling the Legal Maze of Cloud Computing
 Sadly not even great computing power comes without great responsibilities. 
 
-<iframe src="https://giphy.com/embed/MCZ39lz83o5lC" width="480" height="257" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/MCZ39lz83o5lC">via GIPHY</a></p>
+<img src="/img/posts/with_great_powers.png" width="480" height="257" frameBorder="0" alt="With great powers comes great responsibilities - source: https://giphy.com/gifs/MCZ39lz83o5lC" />
 
 The home of the big public clouds (AWS, Azure etc.) are within the US and this can lead to problems in regards to personal data and transferring data from the European Union (EU) to the United States (US) presents significant challenges for companies, particularly when it comes to complying with stringent data protection regulations. The EU's [General Data Protection Regulation](https://commission.europa.eu/law/law-topic/data-protection/eu-data-protection-rules_en) (GDPR) mandates that companies ensure the highest levels of privacy and protection for user data. However, transferring data to the US, where privacy laws are less strict, poses a risk to compliance. The [EU-US Privacy Shield](https://en.wikipedia.org/wiki/EU%E2%80%93US_Privacy_Shield), which was designed to facilitate safe data transfers, was [invalidated by the European Court of Justice in 2020](https://www.bbc.com/news/technology-53418898), leaving companies uncertain about the legal aspects of data transfers. Moreover, the potential exposure to surveillance by US intelligence agencies raises serious concerns for European companies. These issues necessitate careful planning and robust security measures when implementing cloud solutions that involve data transfer between the EU and the US.
 
