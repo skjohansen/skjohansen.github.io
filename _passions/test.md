@@ -6,6 +6,6 @@ img: testing.png
 img-large: testing_clean.png
 alt: image-alt
 title: Test automatization
-passion: Test automatization
+passion: Test
 ---
 Tests in multiple layers are needed, and goes hand in hand with CI
