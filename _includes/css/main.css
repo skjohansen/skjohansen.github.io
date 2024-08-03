@@ -34,6 +34,7 @@ h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    overflow-wrap: break-word;
 }
 
 hr.star-light,
@@ -486,7 +487,9 @@ footer .footer-below {
 }
 
 .postcontent img{
-/*    width: 100%; */
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }
 
 .blogpost-list li{
