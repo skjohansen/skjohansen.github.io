@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Test från vänster åt högre och tillbaka igen
-passions: Test
+passions: Test, DevOps
 summary: Shift Left Testing och dess motpart Shift Right Testing representerar två strategier för att förbättra testningen av mjukvaruapplikationer. Båda metoderna bidrar till att skapa en kultur av ökat samarbete inom utvecklingsteamen.
 language: sv
 banner-image: test-samlad.png
