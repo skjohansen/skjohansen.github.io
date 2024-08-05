@@ -30,7 +30,7 @@ Ett sätt att hantera dissa risker är att genom att låta testerna i alla faser
 
 ## Vad är Shift Left Testing?
 
-När mjukvaruutvecklingsprocessen betraktas som en sekventiell process från vänster till höger, kan det att utföra tester tidigare ses som att "förflytta åt vänster", på engelska Shift Left Testing och kan sporas [tillbaka till 2001](https://www.drdobbs.com/shift-left-testing/184404768). Begreppet kan självklart ses som en missvisande term, eftersom vi inte bara "flyttar" testar utan istället utför tester i alla faser av processen (och påverkar med ett test tänk), så man kan säga att det i högre utsträck handlar om att utöka testarna fokus till nu att täcka mer av vänstra sida, tanken är att genom vara med tidigt i process kan testarna vara med och skapa en bättre förutsättning för högre kvalitet och system som är enklare att testa. Detta spara tid i test-fasen, som sen får ett mindra fokus. 
+När mjukvaruutvecklingsprocessen betraktas som en sekventiell process från vänster till höger, kan det att utföra tester tidigare ses som att "förflytta åt vänster", på engelska Shift Left Testing och kan sporras [tillbaka till 2001](https://www.drdobbs.com/shift-left-testing/184404768). Begreppet kan självklart ses som en missvisande term, eftersom vi inte bara "flyttar" testar utan istället utför tester i alla faser av processen (och påverkar med ett test tänk), så man kan säga att det i högre utsträck handlar om att utöka testarna fokus till nu att täcka mer av vänstra sida, tanken är att genom vara med tidigt i process kan testarna vara med och skapa en bättre förutsättning för högre kvalitet och system som är enklare att testa. Detta spara tid i test-fasen, som sen får ett mindre fokus. 
 
 ![Graf som visar test efter utveckling och shift left](/img/posts/test-fokus_shitleft.png)
 
@@ -40,7 +40,7 @@ I grunden handlar [Shift Left Testing](https://testfully.io/blog/shift-left-test
 
 Genom att kombinera utveckling och kvalitetskontroll tidigare och djupare i en projektplan kan man utöka sitt testprogram och minska behovet av arbetskraft och utrustning senare i processen. Att få med testerna med redan i kravskrivningen minskar risken för otestbara system och ökar chansen för ökad automatisering av testerna, oftast genom att testerna öppet ställer frågan: "Hur ska vi kunna verifiera att denna funktionalitet fungera som tänkt?" och tillsammans med utvecklarna skåpar förutsättningarna för automatiska testar och enklare test rutiner.  
 
-Fördelarna med att omfamna Shift Left Testing kan vara många, både förtestarna själva men för organisationen i stort:
+Fördelarna med att omfamna Shift Left Testing kan vara många, både för testarna själva men för organisationen i stort:
 
 - **Högre mjukvarukvalitet**: Proaktiva teststrategier ger en förbättrad produktkvalitet.
 - **Tidigare defektdetektering**: Fel hittas tidigare och fler fel hittas, speciellt fel som rör flödet, som annars först upphittas av användarna när produkten är i produktion.
