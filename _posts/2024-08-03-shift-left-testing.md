@@ -19,12 +19,12 @@ En utvecklingsprocess vart testerna jobbar på detta viset, i en isolerat test-f
 
 Riskerna med "test efter utveckling"-metodiken inkluderar:
 
-1. **Ökad kostnad och förseningar i projektet**: Om buggar upptäcks sent i utvecklingscykeln måste utvecklarna avsätta tid för att åtgärda problemen, vilket kan leda till förseningar i release av produkten. Att åtgärda fel efter att utvecklingen är klar kan bli kostsamt, särskilt om problemen är komplexa eller kräver omfattande förändringar.
+1. **Ökad kostnad och förseningar i projektet**: Om buggar upptäcks sent i utvecklingscykeln måste utvecklarna avsätta tid för att åtgärda problemen, vilket kan leda till förseningar i release av produkten. Att åtgärda fel efter att utvecklingen är klar kan bli [kostsamt](https://www.functionize.com/blog/the-cost-of-finding-bugs-later-in-the-sdlc), särskilt om problemen är komplexa eller kräver omfattande förändringar.
 2. **Test-fasen bliver en flaskhals:** När tester genomförs i slutet av utvecklingscykeln kan de snabbt bli en flaskhals i hela processen. Om testarna identifierar stora mängder buggar eller problem, kan deras arbetsbelastning öka dramatiskt.
 3. **Stort avstånd mellan testare och kravställare:** När dessa två grupper arbetar isolerade från varandra kan bristande kommunikation och missförstånd kring kravspecifikationerna leda till att testerna inte alltid speglar användarnas verkliga beteende.
 4. **Brist­fäll­ig överlämning emellan faser:** Varje fas blir en silo och emellan varje silo måste där vara en överlämning (muntlig eller på skrift), den stora risk är här att kommunikationen inte är tillräcklig bra och att förståelsen för vad som ska testas och hur det ska göras inte överföras effektivt.  
 5. **Teknisk skuld**: Om testerna inte ser systemet i en större helhet kan det kan det leda till att teknisk skuld byggs upp, vilket gör framtida underhåll och utveckling svårare.
-6. **Otestbart system**: Om systemet har utvecklats utan att ta hänsyn till testbarhet från början kan det sakna nödvändiga gränssnitt, loggning eller dokumentation som krävs för effektiv testning. 
+6. **Otestbart system**: Om systemet har utvecklats [utan att ta hänsyn till testbarhet](https://medium.com/slalom-build/on-untestable-software-6e64c34bfbad) från början kan det sakna nödvändiga gränssnitt, data, loggning eller dokumentation som krävs för effektiv testning. 
 
 Ett sätt att hantera dissa risker är att genom att låta testerna i alla faser innan test-fasen i stället för att vänta på att implementations- och bygg-faserna är klara, att göra detta kallas Shift Left Testing (förflytta åt vänster).
 
