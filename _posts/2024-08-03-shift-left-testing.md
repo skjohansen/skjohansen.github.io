@@ -20,10 +20,10 @@ En utvecklingsprocess vart testerna jobbar på detta viset, i en isolerat test-f
 Riskerna med "test efter utveckling"-metodiken inkluderar:
 
 1. **Ökad kostnad och förseningar i projektet**: Om buggar upptäcks sent i utvecklingscykeln måste utvecklarna avsätta tid för att åtgärda problemen, vilket kan leda till förseningar i release av produkten. Att åtgärda fel efter att utvecklingen är klar kan bli [kostsamt](https://www.functionize.com/blog/the-cost-of-finding-bugs-later-in-the-sdlc), särskilt om problemen är komplexa eller kräver omfattande förändringar.
-2. **Test-fasen bliver en flaskhals:** När tester genomförs i slutet av utvecklingscykeln kan de snabbt bli en flaskhals i hela processen. Om testarna identifierar stora mängder buggar eller problem, kan deras arbetsbelastning öka dramatiskt.
+2. **Test-fasen bliver en flaskhals:** När tester genomförs i slutet av utvecklingscykeln kan de [ofta bli en flaskhals](https://shows.acast.com/the-quality-podcast/episodes/ep-7-why-is-qa-testing-often-a-bottleneck) i hela processen. Om testarna identifierar stora mängder buggar eller problem, kan deras arbetsbelastning öka dramatiskt.
 3. **Stort avstånd mellan testare och kravställare:** När dessa två grupper arbetar isolerade från varandra kan bristande kommunikation och missförstånd kring kravspecifikationerna leda till att testerna inte alltid speglar användarnas verkliga beteende.
-4. **Brist­fäll­ig överlämning emellan faser:** Varje fas blir en silo och emellan varje silo måste där vara en överlämning (muntlig eller på skrift), den stora risk är här att kommunikationen inte är tillräcklig bra och att förståelsen för vad som ska testas och hur det ska göras inte överföras effektivt.  
-5. **Teknisk skuld**: Om testerna inte ser systemet i en större helhet kan det kan det leda till att teknisk skuld byggs upp, vilket gör framtida underhåll och utveckling svårare.
+4. **Brist­fäll­ig överlämning emellan faser:** Varje fas blir en silo och emellan varje silo måste där vara en överlämning (muntlig eller på skrift), den stora risk är här att kommunikationen inte är tillräcklig bra och att förståelsen för vad som ska testas och hur det ska göras inte överföras effektivt, vilket kan leda till [en rad problem](http://www.diva-portal.org/smash/get/diva2:504444/FULLTEXT01.pdf).
+5. **Teknisk skuld**: Om testerna inte ser systemet i en större helhet kan det kan det leda till att [teknisk skuld](https://www.testdevlab.com/blog/understanding-technical-debt-from-a-quality-assurance-perspective) byggs upp, vilket gör framtida underhåll och utveckling svårare. [Dålig test teckning](https://www.softwaretestinghelp.com/technical-debt-and-qa/) är också en sorts teknisk skuld.
 6. **Otestbart system**: Om systemet har utvecklats [utan att ta hänsyn till testbarhet](https://medium.com/slalom-build/on-untestable-software-6e64c34bfbad) från början kan det sakna nödvändiga gränssnitt, data, loggning eller dokumentation som krävs för effektiv testning. 
 
 Ett sätt att hantera dissa risker är att genom att låta testerna i alla faser innan test-fasen i stället för att vänta på att implementations- och bygg-faserna är klara, att göra detta kallas Shift Left Testing (förflytta åt vänster).
@@ -40,6 +40,14 @@ I grunden handlar [Shift Left Testing](https://testfully.io/blog/shift-left-test
 
 Genom att kombinera utveckling och kvalitetskontroll tidigare och djupare i en projektplan kan man utöka sitt testprogram och minska behovet av arbetskraft och utrustning senare i processen. Att få med testerna med redan i kravskrivningen minskar risken för otestbara system och ökar chansen för ökad automatisering av testerna, oftast genom att testerna öppet ställer frågan: "Hur ska vi kunna verifiera att denna funktionalitet fungera som tänkt?" och tillsammans med utvecklarna skåpar förutsättningarna för automatiska testar och enklare test rutiner.  
 
+Fördelarna med att omfamna Shift Left Testing kan vara många, både förtestarna själva men för organisationen i stort:
+
+- **Högre mjukvarukvalitet**: Proaktiva teststrategier ger en förbättrad produktkvalitet.
+- **Tidigare defektdetektering**: Fel hittas tidigare och fler fel hittas, speciellt fel som rör flödet, som annars först upphittas av användarna när produkten är i produktion.
+- **Förbättrad samarbete**: Genom att bryta ner silos mellan utvecklings- och testteam förbättras kommunikationen och feedbacklooparna. Teamet blir helt enkelt mer agilt.
+- **Kompetensutveckling**: Testare och systemutvecklare bör sträva efter att lära sig nya färdigheter som gör dem mångsidiga, eller T-formade.
+- **Effektivare resursanvändning**: Genom att identifiera och åtgärda problem tidigt sparar man tid och resurser. Eftersom man tar bort dödtiden som ofta uppstår är testerna väntar på utvecklarna och andra hållet också.
+
 ## TDD och BDD till undsättning
 
 Att komma på gång med Shift Left Testing är inte helt enkelt, såklart kan test bara börja att dela i krav och utvecklarnas vardag och ställa jobbiga frågor, om dom har tid, men det bästa är om man har någon typ av process till att understötta detta, och här kan metoderna TDD och BDD vara två bra förslag.
@@ -55,16 +63,6 @@ I Shift Left-kulturen förändras testarnas roll i grunden. De går från att va
 Detta skifte kräver att testarna anpassar sig och utvecklar nya färdigheter, såsom testautomatisering och förståelse för kontinuerlig integration. De behöver även få insikt i hur utvecklare arbetar. 
 
 Samtidigt måste systemutvecklarna vänja sig vid att se testarna som en resurs som kan stödja dem i deras arbete. Testerna bidrar till att säkerställa en adekvat testtäckning och ger råd om den bästa vägen framåt för testerna.
-
-## Fördelar med Shift Left Testing
-
-Att omfamna en Shift Left Testing har många fördelar för både testarna själva men för organisationen i stort:
-
-- **Högre mjukvarukvalitet**: Proaktiva teststrategier ger en förbättrad produktkvalitet.
-- **Tidigare defektdetektering**: Fel hittas tidigare och fler fel hittas, speciellt fel som rör flödet, som annars först upphittas av användarna när produkten är i produktion.
-- **Förbättrad samarbete**: Genom att bryta ner silos mellan utvecklings- och testteam förbättras kommunikationen och feedbacklooparna. Teamet blir helt enkelt mer agilt.
-- **Kompetensutveckling**: Testare och systemutvecklare bör sträva efter att lära sig nya färdigheter som gör dem mångsidiga, eller T-formade.
-- **Effektivare resursanvändning**: Genom att identifiera och åtgärda problem tidigt sparar man tid och resurser. Eftersom man tar bort dödtiden som ofta uppstår är testerna väntar på utvecklarna och andra hållet också.
 
 ## "Shift left"s (onda) tvilling
 
