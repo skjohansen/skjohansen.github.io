@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Embracing the Zero Defect Strategy: Why Fixing Bugs Immediately Wins the Race
+title: Embracing the Zero Defect Strategy - Why Fixing Bugs Immediately Wins the Race
 passions: Test, Software development
 summary: Adopt the Zero Defect Strategy by fixing bugs immediately instead of backlogging them. Inspired by the Hare and the Tortoise, this approach ensures higher quality, reduced costs, and increased customer satisfaction. Mathematical proofs show that backlogging bugs leads to greater expenses over time. In Scrum, avoid assigning story points to bugs as it masks quality issues and disrupts team velocity. Embracing a steady, proactive bug-fixing method leads to more successful and sustainable software projects.
 language: sv
