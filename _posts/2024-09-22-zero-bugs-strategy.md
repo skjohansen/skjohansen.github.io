@@ -25,6 +25,7 @@ Imagine your project is like the Hare from our favorite fable. Fast, energetic, 
 ## The Tortoise’s Wisdom: Zero Bugs Strategy
 
 On the other hand, the Tortoise represents a methodical, steady approach—akin to the Zero Bugs Strategy. The Zero Bugs Strategy is not a new thing, one of the first usage in a large scale was at Microsoft where a [Zero-defects code memo](https://sriramk.com/memos/zerodef.pdf) was send out on 1989-06-20, the main point in this memo being that *done* should mean *done-done*.
+
 This strategy emphasizes fixing bugs immediately rather than deferring them. You might wonder, “Why spend time fixing bugs right away when we can address them later?” Let’s break it down.
 
 ## Why Fixing Bugs Immediately Makes Sense
@@ -39,7 +40,13 @@ In the realm of Scrum, a popular agile framework, the temptation to estimate bug
 
 Furthermore, estimating bugs often leads to inaccuracies because the time required to fix them is inherently uncertain. Unlike feature development, where requirements are clear and tasks are more predictable, bugs can vary widely in complexity and impact. Attempting to assign story points to bugs can disrupt the sprint planning process, as the team struggles to accommodate unpredictable workloads. Instead of inflating velocity metrics with unresolved issues, it makes more sense to address bugs directly. This focus not only improves product quality but also provides a more accurate reflection of the team’s true velocity, fostering a healthier and more transparent development environment.
 
-Should we against all recomendations start to backlog our bugs should we treate the bugs as any other kind of work, meaning that there should be no difference in bugs and PBIs, and that the bugs should be priotitized by the customers like any other work in the application.
+Should we against all recomendations start to backlog our bugs, we should first realize that this is risky buisness, that will lead to an ever growing number of bugs and increacing accentendtial complexity \\((X_a)\\). If we do so should we treate the bugs as any other kind of work, meaning that there should be no difference in bugs and PBIs, and that the bugs should be priotitized by the customers like any other work in the application.
+
+### Leacy systems and zero bugs
+
+Even on a legacy system with a long list of known bugs can we start to introduce a zero bug strategy. In order to do this should we fist set a baseline of the current number of bugs, and agree that we should never have more bugs than within our baseline. It dosent need to be accatly these bugs just this number.
+
+After some time showning that this is possible should agree on a number by which we start to lower the number of bugs, per iteration, and at the same time move the baseline downwards.
 
 ## The Mathematical Backbone: Simple Logic, Big Impact
 
@@ -66,7 +73,7 @@ In the race of software development, don’t let the temptation to backlog bugs 
 Remember, in the world of software, slow and steady not only wins the race—it builds a product that stands the test of time.
 
 
-## P.S. The Mathematical Proof Behind the Zero Bugs Strategy
+## P.S. The Mathematical Resonation of a Zero Bugs Strategy
 
 For those interested in the detailed reasoning that underpins the Zero Bugs Strategy, here's a mathematical explanation demonstrating why fixing bugs immediately is more cost-effective than backlogging them.
 
@@ -74,21 +81,35 @@ For those interested in the detailed reasoning that underpins the Zero Bugs Stra
 
 Let’s define the following variables:
 
-- \\( C_f \\): Cost of fixing a bug **immediately**.
-- \\( C_b \\): Cost of **backlogging** (estimating and storing) a bug, including initial overhead.
-- \\( D \\): The delay between identifying a bug and its eventual fix if backlogged.
-- \\( R(D) \\): Additional costs incurred due to the delay \( D \), such as increased complexity, customer dissatisfaction, or further bugs.
+- \\( X_e \\): Essential complexity, the actuall complexity in fixing the bug.
+- \\( X_a \\): Accecendential complexity, the things that makes it hard to fix the bog (bad code, other bugs, bad architecture)
+- \\( C_f \\): Cost of fixing a bug.
+- \\( C_b \\): Cost of **backlogging** (estimating, describing and priotizing) a bug.
+- \\( FD \\): Feature delay, the delay of new feature due to bug fixing
+- \\( C(FD) \\): Additional costs incurred due to the delay \( FD \), such as lost revenue. 
+- \\( BD \\): The backlog delay between identifying a bug and its eventual fix, if backlogged.
+- \\( C(BD) \\): Additional costs incurred due to the delay \( BD \), such as increased support, customer dissatisfaction, or further bugs.
 - \\( N \\): Total number of bugs identified in the project.
 
 ### Scenario 1: Fixing Bugs Immediately
 
+To find and fix the actuall bug involves some kind of complexity this is the essential complexity, but when we start to fix the bug will we often (especially in larger and older codes bases) experience that other tings is making it hard, sometimes almost impossible to fix the bug, this is the accendential (or unplanned) complexity.
+
+\\[
+C_f = X_e + X_a
+\\]
+
+Our hope is always that \\( X_a \\) is so close to zero as possible.
+
 When bugs are fixed as they are found, the total cost is simply:
 
 \\[
-C_{\text{total\_f}} = N \times C_f
+C_{\text{total\_f}} = N \times ( C_f + C(FD) )
 \\]
 
-This represents the straightforward cost of addressing each bug without delay.
+This represents the straightforward cost of addressing each bug when they are identified.
+
+<!-- Update below -->
 
 ### Scenario 2: Backlogging Bugs
 
