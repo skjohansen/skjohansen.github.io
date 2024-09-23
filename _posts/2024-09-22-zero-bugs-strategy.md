@@ -101,10 +101,10 @@ C_f = X_e + X_a
 
 Our hope is always that \\( X_a \\) is so close to zero as possible.
 
-When bugs are fixed as they are found, the total cost is simply:
+When bugs are fixed as they are found, the total cost for a given number of bugs when fixed imediatly is:
 
 \\[
-C_{\text{total\_f}} = N \times ( C_f + C(FD) )
+C_{\text{total\_f}} = \sum_{i=1}^{N} C_fi + C(FD_i)
 \\]
 
 This represents the straightforward cost of addressing each bug when they are identified.
@@ -116,7 +116,7 @@ This represents the straightforward cost of addressing each bug when they are id
 When bugs are backlogged, the total cost comprises the initial backlog cost plus the additional costs incurred over time due to the delay:
 
 \\[
-C_{\text{total\_b}} = N \times C_b + \sum_{i=1}^{N} R(D_i)
+C_{\text{total\_b}} = N \times C_b + \sum_{i=1}^{N} C(BD_i)
 \\]
 
 Here, \\( R(D_i) \\) represents the additional cost for each bug \\( i \\) based on its specific delay \\( D_i \\).
