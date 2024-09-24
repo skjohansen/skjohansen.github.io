@@ -14,23 +14,25 @@ As decision-makers in software development, you’re constantly balancing [the f
 ### Bugs and defects
 First we need to get our diffinations alinged. Bugs are in general more a word from everyday language, while defect is more formal, but in my opinion does it covers different puropses.
 
-A **defect** is in my opionion when you are building something that works, but disagrees with the specification. By adopting [BDD](https://cucumber.io/docs/bdd/) and/or [TDD](https://martinfowler.com/bliki/TestDrivenDevelopment.html) do we eleminate defects.
+A **defect** is in my opionion something that shows up when you are building something that works, but disagrees with the specification. By adopting [BDD](https://cucumber.io/docs/bdd/) and/or [TDD](https://martinfowler.com/bliki/TestDrivenDevelopment.html) do we eleminate defects, these are techniques which continiously verifies the specifications.
 
-A **bug** on the other hand is when we are building something that follows specification, but dosent work. Bugs occour whenever our systems is subject of exploratory testing, showcases, users and people with malicuois intents. Functionality not covered by the specification is also considered as bugs.
+A **bug** on the other hand shows up when we are building something that follows specification, but dosent work. Bugs occour whenever our systems is subject of exploratory testing, showcases, users and people with malicuois intents. Functionality not covered by the specification should also be considered as bugs. Likewise are security holes.
 
-In the rest of this post do we make the assumption that we have the *defects* under control, so we leave those out of the scope and focus on the *bugs*.
+In the rest of this post do we make the assumption that we have the *defects* under control, so we leave those out of the scope and focus on the *bugs*. Let the debugging begin!
 
 ## The Hare’s Temptation: Backlogging Bugs
 
-Imagine your project is like the software developing Hare from our classic fable. Fast, energetic, and eager to push features out, you might be tempted to backlog bugs—cataloging them for future fixes, you may even have a deadline you need to catch. At first glance, this seems efficient. You’re moving quickly, delivering features, and keeping the sprint velocity high. But just like the Hare’s overconfidence, this approach can lead to unexpected pitfalls.
+Imagine your development process is like a software developing Hare from our classic fable. 
 
-The most common pitfall of focusing on high speed are low quality, of both requirements, code and architecture. A drive for high velocity can lead to developers cutting corners. This often results in poorly written code, skipped code reviews, insufficient testing, or incomplete documentation. Over time, this [technical debt](https://stackoverflow.blog/2023/12/27/stop-saying-technical-debt/) can grow, making the codebase fragile and more difficult to maintain.
+Being fast, energetic, and eager to push features out, you may even have a deadline blowing you in the neck. You might be tempted to backlog bugs — cataloging them for future fixes. At first glance, this seems efficient. You’re moving quickly, delivering features, and keeping the sprint velocity high. But just like the Hare’s overconfidence, this approach can lead to unexpected pitfalls.
 
-Another risk that we prioritize only short-term development, forget to think of the long term and cut too many corners, in that case do we end up with a [big ball of mud](http://www.laputan.org/mud/mud.html#BigBallOfMud) which is expensive to maintain.
+The most common pitfall of focusing on high speed are lowering the quality of both requirements, code and architecture. A drive for high velocity can lead to developers cutting corners. This often results in poorly written code, skipped or superficial code reviews, insufficient testing, or incomplete documentation. The result of this is [technical debt](https://stackoverflow.blog/2023/12/27/stop-saying-technical-debt/) and over time this can grow, making the codebase fragile and more difficult to maintain.
+
+Another risk are that we prioritize only the short-term development to get quick wins, and forget to think of the long-term and cut too many corners, in that case do we often end up with a [big ball of mud](http://www.laputan.org/mud/mud.html#BigBallOfMud) which is expensive to maintain, and the best way to make developers quit their job.
 
 ## The Tortoise’s Wisdom: Zero Bugs Strategy
 
-On the other hand, the Tortoise represents a methodical, steady approach — akin to the Zero Bugs Strategy aka [Zero Bug Policy](https://sookocheff.com/post/process/zero-bug-policy/). The Zero Bugs Strategy is not a new thing, one of the first usage in a large scale was at Microsoft where a [Zero-defects code memo](https://sriramk.com/memos/zerodef.pdf) was send out on 20th of June 1989, the main point in this memo being that *done* should mean *done-done*.
+On the other hand, the Tortoise represents a methodical, steady approach — akin to the Zero Bugs Strategy aka [Zero Bug Policy](https://sookocheff.com/post/process/zero-bug-policy/). The Zero Bugs Strategy is not a new thing, one of the first usage in a large scale was at Microsoft where a [Zero-defects code memo](https://sriramk.com/memos/zerodef.pdf) was send out on 20th of June 1989, the main point of this memo being that *done* should mean *done-done*.
 
 This is also pointed out by Joel Spolsky in his [12 Steps to Better Code](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/), see step 5: *Do you fix bugs before writing new code?*
 
@@ -43,7 +45,7 @@ Delaying bug fixes can lead to increased costs down the line. Imagine each bug a
 > If a bug was addressed on the same day it was created, it would take an hour to fix; three weeks later, it would take *twenty-four* hours. It didn't matter if the bug was big or small, complicted or simple - it always took twenty-four times longer three weeks later.
 > - *"Scrum - The art of doing twice the work in half the time", Sutherland and Sutherland (2014, p. 100)*
 
-Moreover, backlogging bugs is one factor contributes to technical debt — the future work required to fix issues that weren’t addressed promptly. Even a litle technical debt can slow down development, making future changes more difficult and time-consuming. Addressing bugs immediately helps keep your codebase clean and manageable. Some bugs can trigger additional issues, creating a domino effect of problems. Fixing bugs as they arise helps prevent these cascade effects, ensuring that one issue doesn’t lead to many more.
+Moreover, backlogging bugs the nuber one factor of building technical debt — the future work required to fix issues that weren’t addressed promptly. Even a litle technical debt can slow down development, making future changes more difficult and time-consuming. Addressing bugs immediately helps keep your codebase clean and manageable. Some bugs can trigger additional issues, creating a domino effect of problems. Fixing bugs as they arise helps prevent these cascade effects, ensuring that one issue doesn’t lead to many more.
 
 Rather than fixing bugs, agile methods strive to prevent them. https://www.jamesshore.com/v2/books/aoad1/no_bugs
 
