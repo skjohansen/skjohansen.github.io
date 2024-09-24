@@ -1,42 +1,64 @@
 ---
 layout: post
-title: Embracing the Zero Bug Strategy - Why Fixing Bugs Immediately Wins the Race
+title: Embracing a Zero Bug Strategy - Why Fixing Bugs Immediately Wins the Race
 passions: Test, Software development
-summary: Adopt the Zero Bug Strategy by fixing bugs immediately instead of backlogging them. Inspired by the Hare and the Tortoise, this approach ensures higher quality, reduced costs, and increased customer satisfaction. Embracing a steady, proactive bug-fixing method leads to more successful and sustainable software projects.
+summary: Adopt a Zero Bug Strategy by fixing bugs immediately instead of backlogging them. A blog post inspired by the tale of the Hare and the Tortoise, a Zero Bug Strategy ensures higher quality, reduced costs, and increased customer satisfaction. And is done by embracing a steady, proactive bug-fixing method which leads to more successful and sustainable software projects.
 language: en
 banner-image: hare-bug-header.png
 ---
 
-*“Slow and steady wins the race.”* – A timeless lesson from the tale of the [Hare and the Tortoise](https://read.gov/aesop/025.html). In the fast-paced world of software development, this classic fable offers more than just a moral about humility and perseverance—it provides valuable insights into how we handle bugs in our projects.
+*“Slow and steady wins the race.”* – A timeless lesson from the tale of the [Hare and the Tortoise](https://read.gov/aesop/025.html). In the fast-paced world of software development, this classic fable offers more than just a moral about humility and perseverance — it provides valuable insights into how we should handle bugs in our projects.
 
-As decision-makers in software development, you’re constantly balancing [resources, scope, quality, and time](https://wiki.c2.com/?FourVariables). One critical decision is whether to fix bugs immediately or to backlog them for later resolution. Let’s explore why adopting a **Zero Bug Strategy**—fixing bugs as they arise—might just be the tortoise-like approach that ensures your project’s success, backed by some straightforward reasoning.
+As decision-makers in software development, you’re constantly balancing [resources, scope, quality, and time](https://wiki.c2.com/?FourVariables). One critical decision is whether to fix bugs immediately or to backlog them for later resolution. The blog prost tries to explore why adopting a **Zero Bug Strategy** (fixing bugs as they arise) might just be the tortoise-like approach that ensures your project’s success, backed by some straightforward reasoning.
 
 ### Bugs and defects
-Building something that works, but disagrees with the specification is a defect. Building something that follows specification but dosent work is due to bugs.
+First we need to get our diffinations alinged. Bugs are in general more a word from everyday language, while defect is more formal, but in my opinion does it covers different puropses.
 
-By adopting BDD and/or TDD do we eleminate defects as much as possible. Left is the bugs.
+A **defect** is in my opionion when you are building something that works, but disagrees with the specification. By adopting [BDD](https://cucumber.io/docs/bdd/) and/or [TDD](https://martinfowler.com/bliki/TestDrivenDevelopment.html) do we eleminate defects.
 
-Bugs occour when ever our systems is put into production and meet realife users.
+A **bug** on the other hand is when we are building something that follows specification, but dosent work. Bugs occour whenever our systems is subject of exploratory testing, showcases, users and people with malicuois intents. Functionality not covered by the specification is also considered as bugs.
+
+In the rest of this post do we make the assumption that we have the *defects* under control, so we leave those out of the scope and focus on the *bugs*.
 
 ## The Hare’s Temptation: Backlogging Bugs
 
-Imagine your project is like the Hare from our favorite fable. Fast, energetic, and eager to push features out, you might be tempted to backlog bugs—cataloging them for future fixes. At first glance, this seems efficient. You’re moving quickly, delivering features, and keeping the sprint velocity high. But just like the Hare’s overconfidence, this approach can lead to unexpected pitfalls.
+Imagine your project is like the Hare from our favorite fable. Fast, energetic, and eager to push features out, you might be tempted to backlog bugs—cataloging them for future fixes, you may even have a deadline you need to catch. At first glance, this seems efficient. You’re moving quickly, delivering features, and keeping the sprint velocity high. But just like the Hare’s overconfidence, this approach can lead to unexpected pitfalls.
+
+The most common pitfall of focusing on high speed are low quality, of both requirements, code and architecture. A drive for high velocity can lead to developers cutting corners. This often results in poorly written code, skipped code reviews, insufficient testing, or incomplete documentation. Over time, this [technical debt](https://stackoverflow.blog/2023/12/27/stop-saying-technical-debt/) can grow, making the codebase fragile and more difficult to maintain.
+
+Another risk that we prioritize only short-term development, forget to think of the long term and cut too many corners, in that case do we end up with a [big ball of mud](http://www.laputan.org/mud/mud.html#BigBallOfMud) which is expensive to maintain.
 
 ## The Tortoise’s Wisdom: Zero Bugs Strategy
 
 On the other hand, the Tortoise represents a methodical, steady approach—akin to the Zero Bugs Strategy. The Zero Bugs Strategy is not a new thing, one of the first usage in a large scale was at Microsoft where a [Zero-defects code memo](https://sriramk.com/memos/zerodef.pdf) was send out on 1989-06-20, the main point in this memo being that *done* should mean *done-done*.
 
+[Do you fix bugs before writing new code?](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/)
+
 This strategy emphasizes fixing bugs immediately rather than deferring them. You might wonder, “Why spend time fixing bugs right away when we can address them later?” Let’s break it down.
+
+https://sookocheff.com/post/process/zero-bug-policy/
 
 ## Why Fixing Bugs Immediately Makes Sense
 
 Delaying bug fixes can lead to increased costs down the line. Imagine each bug as a small hole in a boat. Ignoring one might not sink you, but ignoring many can lead to bigger problems. The longer a bug remains unfixed, the more complex and costly it becomes to address. Fixing bugs promptly prevents these escalating costs, ensuring your project remains on budget. Additionally, unresolved bugs can affect user experience, leading to dissatisfaction and potential loss of customers. By adopting a Zero Bugs Strategy, you maintain high-quality standards, fostering trust and loyalty among your users.
 
-Moreover, backlogging bugs contributes to technical debt—the future work required to fix issues that weren’t addressed promptly. High technical debt can slow down development, making future changes more difficult and time-consuming. Addressing bugs immediately helps keep your codebase clean and manageable. Some bugs can trigger additional issues, creating a domino effect of problems. Fixing bugs as they arise helps prevent these cascade effects, ensuring that one issue doesn’t lead to many more.
+> If a bug was addressed on the same day it was created, it would take an hour to fix; three weeks later, it would take *twenty-four* hours. It didn't matter if the bug was big or small, complicted or simple - it always took twenty-four times longer three weeks later.
+> - *"Scrum - The art of doing twice the work in half the time", Sutherland and Sutherland (2014, p. 100)*
 
-## The Scrum Conundrum: Why Bugs Don’t Belong in Story Points
+Moreover, backlogging bugs is one factor contributes to technical debt — the future work required to fix issues that weren’t addressed promptly. Even a litle technical debt can slow down development, making future changes more difficult and time-consuming. Addressing bugs immediately helps keep your codebase clean and manageable. Some bugs can trigger additional issues, creating a domino effect of problems. Fixing bugs as they arise helps prevent these cascade effects, ensuring that one issue doesn’t lead to many more.
 
-In the realm of Scrum, a popular agile framework, the temptation to estimate bugs using story points can be particularly strong. However, this practice can undermine the very foundation of your team's productivity and morale. Bugs should be viewed as indicators of quality issues rather than tasks to be quantified and added to the backlog. When bugs are estimated and assigned story points, it inadvertently signals that poor quality is acceptable and can be accounted for within the team’s velocity. This approach can create a misleading sense of progress, as the team’s velocity might appear higher while masking the underlying quality problems that need immediate attention.
+Rather than fixing bugs, agile methods strive to prevent them. https://www.jamesshore.com/v2/books/aoad1/no_bugs
+
+## The "Scrum" Conundrum: Why Bugs Don’t Belong in Story Points
+
+Many organizations which implements Scrum, a popular agile framework, the temptation to estimate bugs using story points can be particularly strong (even though Scrum is not mentioning this). However, this practice can undermine the very foundation of your team's productivity and morale. Bugs should be viewed as indicators of quality issues rather than tasks to be quantified and added to the backlog. When bugs are estimated and assigned story points, it inadvertently signals that poor quality is acceptable and can be accounted for within the team’s velocity. This approach can create a misleading sense of progress, as the team’s velocity might appear higher while masking the underlying quality problems that need immediate attention.
+
+A bug is a symptom of a PBI which is *not done*.
+
+> The Product Backlog is an emergent, ordered list of what is needed to improve the product.
+> - [The 2020 Scrum Guide](https://scrumguides.org/scrum-guide.html#product-backlog)
+
+Besides this is the point of a backlog to predrict value to the customers, a bug does not contain any value to the customers, to introducin bugs to the backlog will give a misleading picture of us delivering while while we dont.
 
 Furthermore, estimating bugs often leads to inaccuracies because the time required to fix them is inherently uncertain. Unlike feature development, where requirements are clear and tasks are more predictable, bugs can vary widely in complexity and impact. Attempting to assign story points to bugs can disrupt the sprint planning process, as the team struggles to accommodate unpredictable workloads. Instead of inflating velocity metrics with unresolved issues, it makes more sense to address bugs directly. This focus not only improves product quality but also provides a more accurate reflection of the team’s true velocity, fostering a healthier and more transparent development environment.
 
@@ -47,6 +69,8 @@ Should we against all recomendations start to backlog our bugs, we should first 
 Even on a legacy system with a long list of known bugs can we start to introduce a zero bug strategy. In order to do this should we fist set a baseline of the current number of bugs, and agree that we should never have more bugs than within our baseline. It dosent need to be accatly these bugs just this number.
 
 After some time showning that this is possible should agree on a number by which we start to lower the number of bugs, per iteration, and at the same time move the baseline downwards.
+
+https://blog.crisp.se/2018/02/05/yassalsundman/stop-managing-bugs-start-focusing-on-quality
 
 ## The Mathematical Backbone: Simple Logic, Big Impact
 
