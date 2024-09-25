@@ -24,11 +24,21 @@ In the rest of this post do we make the assumption that we have the *defects* un
 
 Imagine your development process is like a software developing Hare from our classic fable. 
 
-Being fast, energetic, and eager to push features out, you may even have a deadline blowing you in the neck. You might be tempted to backlog bugs — cataloging them for future fixes. At first glance, this seems efficient. You’re moving quickly, delivering features, and keeping the sprint velocity high. But just like the Hare’s overconfidence, this approach can lead to unexpected pitfalls.
+Being fast, energetic, and eager to push features out, you may even have a deadline blowing you in the neck. You might be tempted to backlog bugs — cataloging them for future fixes. At first glance, this seems efficient. You’re moving quickly, delivering features, and keeping the sprint velocity high. But just like the Hare’s overconfidence, this approach can lead to unexpected pitfalls, since the bugs are still there.
 
-The most common pitfall of focusing on high speed are lowering the quality of both requirements, code and architecture. A drive for high velocity can lead to developers cutting corners. This often results in poorly written code, skipped or superficial code reviews, insufficient testing, or incomplete documentation. The result of this is [technical debt](https://stackoverflow.blog/2023/12/27/stop-saying-technical-debt/) and over time this can grow, making the codebase fragile and more difficult to maintain.
+* Quality Trade-offs
+* Backlog Overload
+* Impact on User Experience
+* Decreased Developer Morale
+* False Sense of Progress
+* Difficulty in Maintaining and Scaling
+* Prioritization Challenges
+* Teamwide Inefficiency
+* Loss of Trust from Stakeholders
 
-Another risk are that we prioritize only the short-term development to get quick wins, and forget to think of the long-term and cut too many corners, in that case do we often end up with a [big ball of mud](http://www.laputan.org/mud/mud.html#BigBallOfMud) which is expensive to maintain, and the best way to make developers quit their job.
+The most common pitfall of focusing on high speed, are a lowering the quality; both code, requirements and architecture. A drive for high velocity can lead to developers cutting corners, this could include skipped or superficial code reviews, insufficient testing, or incomplete documentation. The result of this is [technical debt](https://stackoverflow.blog/2023/12/27/stop-saying-technical-debt/) and over time this can grow, making the codebase fragile and more difficult to maintain.
+
+Another risk of focusing on speed are that we prioritize only the short-term architecture to get quick wins, and forget to think of the long-term, in this case do we often end up with a [big ball of mud](http://www.laputan.org/mud/mud.html#BigBallOfMud) which is expensive to maintain, and most likeliy the easiest way to make developers quit their job.
 
 ## The Tortoise’s Wisdom: Zero Bugs Strategy
 
