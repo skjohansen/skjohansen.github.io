@@ -4,7 +4,7 @@ title: Embracing a Zero Bug Strategy - Why Fixing Bugs Immediately Wins the Race
 passions: Test, Software development
 summary: Adopt a Zero Bug Strategy by fixing bugs immediately instead of backlogging them. A blog post inspired by the tale of the Hare and the Tortoise, a Zero Bug Strategy ensures higher quality, reduced costs, and increased customer satisfaction. And is done by embracing a steady, proactive bug-fixing method which leads to more successful and sustainable software projects.
 language: en
-banner-image: hare-bug-header.png
+banner-image: hare-bug-header.jpg
 ---
 
 *“Slow and steady wins the race.”* – A timeless lesson from the tale of the [Hare and the Tortoise](https://read.gov/aesop/025.html). In the fast-paced world of software development, this classic fable offers more than just a moral about humility and perseverance — it provides valuable insights into how we should handle bugs in our projects.
