@@ -108,9 +108,10 @@ Og alle de fine stickynotes blev sat i glas og ramme, som et skrækeksempel på 
 
 ## Moralen
 
-Selvom noget glimrer som det nyeste teknologi, giver det i sig selv ingen værdi. Forfængelighed er alle steder, både med tøj og med teknologi, nogle kan ikke få nok, andre kan ikke få det fint nok.
+Selvom noget glimrer som det nyeste teknologi, giver det i sig selv ingen værdi. Forfængelighed findes ikke kun i klædedragter og spejle, den lever også i buzzwords og backend-systemer. Nogle kan ikke få det nyeste hurtigt nok, andre ikke moderne nok. Men teknologi uden retning er som en guldknap på en tom jakke: pynt uden funktion.
 
-Vi er alle spundet ind i hinandens behov for bekræftelse. Vi har alle brug for at blive set (og beundret og anerkendt) høj som lav i en virksomhed. Dette skaber en mellemmenneskelige skrøbelighed som ofte gør at vi ikke tør indrømme selv det mest åbenlyse af frygt for at tabe ansigt. 
+Den, der ønsker at lede softwareudvikling uden at forstå teknologien, på mere end bare på et overfladisk niveau, risikerer at blive ført bag lyset (af enten externe eller interne aktører) og stå nøgen midt i en storm af smarte slides, ubrugelig kode og en voksende teknisk gæld. Det er ikke nok at have en smart teknisk løsning, der skal være et problem, den løser. Og det problem skal komme fra en reel kunde, intern eller ekstern, som man taler med, lytter til og forstår.
 
-Og den, der vil lede softwareudvikling uden at forstå teknologien på bare en minimalt niveau, risikerer at blive ført bag lyset og stå nøgen midt i en storm af buzzwords, ubrugelig kode og en kæmpe gæld. En teknisk løsning er ikke nok, der skal som minimum også være en kunde (intern eller extern) med et problem der skal løses, har man ikke det og en god dialog med kunden, får man med stor sandsynlighed blot en bunke ubrugelig teknologi.
-Softwareudvikling kræver ofte at organisationen som udfør det skaber en komplext interaktion imellem mennesker og teknologi, det som kaldes et socioteknisk system. 
+Softwareudvikling er nemlig ikke kun teknik og programmering. Det er et komplekst samspil mellem mennesker og maskiner, mellem behov og muligheder. Et såkaldt socioteknisk system. Det kræver indsigt, tålmodighed og dialog hos så vel udvikler som leder – ikke bare PowerPoints og post-its.
+
+Og endelig må vi huske: Vi er alle mennesker, fanget i hinandens længsel efter anerkendelse. Alle har behov for at blive set, unaset vilken rolle vi har. Det gør os sårbare. For i jagten på at bevare ansigt, tier vi ofte, selv når noget ikke giver mening. Vi nikker i stedet for at spørge, og dermed bygger vi stille og roligt en facade indtil nogen, måske en kunde, tør sige det åbenlyse: “Det her giver jo ingen mening.”
